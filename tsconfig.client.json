@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "outDir": "./public/client",
+    },
+    "files": [
+      "client/main.ts"
+    ],
+    "include": [
+      "client"
+    ]
+}

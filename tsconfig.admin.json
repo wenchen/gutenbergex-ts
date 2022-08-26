@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./public/admin",
+      "jsx": "react",
+      "esModuleInterop": true
+    },
+    "files": [
+      "admin/index.tsx"
+    ],
+    "include": [
+      "admin"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}
