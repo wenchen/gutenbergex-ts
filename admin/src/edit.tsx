@@ -1,17 +1,13 @@
-import React from "react";
+import { Component } from '@wordpress/element';
 import { BlockEditProps } from "@wordpress/blocks";
-import { Attributes } from '../info';
-import { useBlockProps } from '@wordpress/block-editor';
-
 import { RichText } from "@wordpress/block-editor";
 
-const blockStyle = {
-	backgroundColor: '#900',
-	color: '#fff',
-	padding: '20px',
-};
+import { Attributes } from '../info';
+import { EditBlockPropContext } from '../context';
 
-class Edit extends React.Component<BlockEditProps<Attributes>> {
+class Edit extends Component<BlockEditProps<Attributes>> {
+    static contextType = EditBlockPropContext;
+
     constructor(props: BlockEditProps<Attributes>) {
         super(props);
     }
@@ -39,7 +35,7 @@ class Edit extends React.Component<BlockEditProps<Attributes>> {
             console.log(`onChangeContent get: ${text}`);
         }
         return (
-            <div className="text">
+            <div {...this.context}>
                 <RichText tagName="p" value={this.props.attributes.text} onChange={onChangeContent} />
             </div>
         );

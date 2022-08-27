@@ -13,7 +13,7 @@ if (is_admin()) {
 			wp_enqueue_script(
 				"{$project_config['admin_name']}-block-js",
 				plugins_url( $project_config['admin_bundle_js_path'], dirname( __FILE__ ) ),
-				$project_config['client_bundle_js_deps'],
+				$project_config['admin_bundle_js_deps'],
 				filemtime( dirname(__DIR__) . $project_config['admin_bundle_js_path'] ),
 				$project_config['admin_js_in_footer']
 			);
@@ -33,7 +33,7 @@ if (is_admin()) {
 				)
 			);
 		});
-	}, 1);
+	});
 } else {
 
 	add_action( 'init', function() {
@@ -61,5 +61,5 @@ if (is_admin()) {
 				'style'         => "{$project_config['client_name']}-style-css",
 			)
 		);
-	}, 1);
+	});
 }

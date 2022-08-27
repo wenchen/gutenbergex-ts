@@ -13,14 +13,12 @@ export const blockInfo: BlockConfiguration<Attributes> = {
 	name: 'gutenberg-ts/admin-block',
 	title: 'GutenbergTS Example Block',
     description: 'GutenbergTS Example Block',
-	icon: 'shield',
+	icon: 'universal-access-alt',
 	category: 'common',
     keywords: ['document', 'pdf', 'download'],
     attributes: {
 		text: {
 			type: "string",
-			source: "html",
-			selector: '.text',
 		},
 	},
 	// styles: [],

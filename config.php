@@ -20,9 +20,9 @@ $project_config = array(
     
     "admin_bundle_js_path" => "/public/admin/main.js",
     "admin_bundle_css_path" => "/public/admin/main.css",
-    "admin_bundle_js_deps" => array( "wp-blocks", "wp-i18n", "wp-element", "wp-editor" ),
-    "admin_bundle_css_deps" => array( "wp-edit-blocks" ),
-    "admin_js_in_footer" => false,
+    "admin_bundle_js_deps" => array(  ),
+    "admin_bundle_css_deps" => array( ),
+    "admin_js_in_footer" => true,
     "admin_css_media" => "all"
 );
 

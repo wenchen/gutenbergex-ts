@@ -1,9 +1,12 @@
-import React from "react";
+import { Component, useContext } from '@wordpress/element';
 import { BlockSaveProps } from "@wordpress/blocks";
 import { Attributes } from '../info';
-import { useBlockProps } from '@wordpress/block-editor';
 
-class Save extends React.Component<BlockSaveProps<Attributes>> {
+class Save extends Component<BlockSaveProps<Attributes>> {
+    constructor(props: BlockSaveProps<Attributes>) {
+        super(props);
+    }
+
     componentDidMount() {
         console.log(`Save componentDidMount`);
     }
@@ -21,10 +24,8 @@ class Save extends React.Component<BlockSaveProps<Attributes>> {
     }
 
     render(): React.ReactNode {
-        const blockProps = useBlockProps.save();
- 
         return (
-            <div className="text">
+            <div>
                 { this.props.attributes.text }
             </div>
         )
