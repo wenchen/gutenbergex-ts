@@ -6,10 +6,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "npm run build-admin; npm run build-client",
-    "build-admin": "webpack --config webpack.admin.config.js",
-    "build-client": "webpack --config webpack.client.config.js",
-    "plugin-zip": "wp-scripts plugin-zip"
+    "build": "webpack --config webpack.config.js",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "dev": "webpack --watch --config webpack.config.js"
   },
   "eslintConfig": {
     "extends": [

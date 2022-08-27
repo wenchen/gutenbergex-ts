@@ -1,4 +1,6 @@
-import { Component, useContext } from '@wordpress/element';
+import React from 'react';
+
+import { Component } from '@wordpress/element';
 import { BlockSaveProps } from "@wordpress/blocks";
 import { Attributes } from '../info';
 
