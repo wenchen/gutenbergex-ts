@@ -9,27 +9,27 @@ export interface Attributes {
 }
 
 export const blockInfo: BlockConfiguration<Attributes> = {
-	apiVersion: 2,
-	name: 'gutenberg-ts/admin-block',
-	title: 'GutenbergTS Example Block',
+    apiVersion: 2,
+    name: 'gutenberg-ts/admin-block',
+    title: 'GutenbergTS Example Block',
     description: 'GutenbergTS Example Block',
-	icon: 'universal-access-alt',
-	category: 'common',
+    icon: 'universal-access-alt',
+    category: 'common',
     keywords: ['document', 'pdf', 'download'],
     attributes: {
-		text: {
-			type: "string",
-		},
-	},
-	// styles: [],
-	supports: {
-		anchor: true,
-		align: true
-	},
-	// variations: [],
-	// transforms,
+        text: {
+            type: "string",
+        },
+    },
+    // styles: [],
+    supports: {
+        anchor: true,
+        align: true
+    },
+    // variations: [],
+    // transforms,
     edit,
-	save
+    save
 };
 
 export default blockInfo as typeof blockInfo;

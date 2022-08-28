@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( "ABSPATH" ) ) {
-	exit;
+    exit;
 }
 
 $project_name = "gutenberg-ts";

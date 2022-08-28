@@ -5,10 +5,10 @@
   "description": "Gutenberg Examples using Typescript",
   "license": "MIT",
   "homepage": "https://github.com/wenchen/gutenbergex-ts/",
-	"repository": "git+https://github.com/wenchen/gutenbergex-ts.git",
-	"bugs": {
-		"url": "https://github.com/wenchen/gutenbergex-ts/issues"
-	},
+  "repository": "git+https://github.com/wenchen/gutenbergex-ts.git",
+  "bugs": {
+    "url": "https://github.com/wenchen/gutenbergex-ts/issues"
+  },
   "dependencies": {
     "web-vitals": "^2.1.4"
   },
