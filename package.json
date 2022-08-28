@@ -1,7 +1,14 @@
 {
-  "name": "gutenberg-ts",
+  "name": "gutenbergex-ts",
   "version": "0.1.0",
   "private": true,
+  "description": "Gutenberg Examples using Typescript",
+  "license": "MIT",
+  "homepage": "https://github.com/wenchen/gutenbergex-ts.git/",
+	"repository": "git+https://github.com/wenchen/gutenbergex-ts.git.git",
+	"bugs": {
+		"url": "https://github.com/wenchen/gutenbergex-ts.git/issues"
+	},
   "dependencies": {
     "web-vitals": "^2.1.4"
   },
