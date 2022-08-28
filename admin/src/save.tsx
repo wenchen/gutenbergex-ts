@@ -9,22 +9,6 @@ class Save extends Component<BlockSaveProps<Attributes>> {
         super(props);
     }
 
-    componentDidMount() {
-        console.log(`Save componentDidMount`);
-    }
-    
-    componentDidUpdate() {
-        console.log(`Save componentDidUpdate`);
-    }
-
-    componentWillUnmount() {
-        console.log(`Save componentWillUnmount`);
-    }
-    
-    handleStatusChange(status) {
-        console.log(`Save handleStatusChange: ${status}`);
-    }
-
     render(): React.ReactNode {
         return (
             <div>

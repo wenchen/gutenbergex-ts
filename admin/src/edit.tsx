@@ -34,7 +34,6 @@ class Edit extends Component<BlockEditProps<Attributes>> {
     render(): React.ReactNode {
         const onChangeContent = ( text ) => {
             this.props.setAttributes( { text } );
-            console.log(`onChangeContent get: ${text}`);
         }
         return (
             <div {...this.context}>
