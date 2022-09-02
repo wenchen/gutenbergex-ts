@@ -11,7 +11,7 @@ if (is_admin()) {
     add_action( 'admin_init', function() {
         add_action( 'enqueue_block_assets', function() {
             wp_enqueue_script(
-                namespace\PROJECT_CONFIG['admin_name']."-block-js",
+                namespace\PROJECT_CONFIG['admin_name']."-block",
                 plugins_url( namespace\PROJECT_CONFIG['admin_bundle_js_path'], dirname( __FILE__ ) ),
                 namespace\PROJECT_CONFIG['admin_bundle_js_deps'],
                 filemtime( dirname(__DIR__) . namespace\PROJECT_CONFIG['admin_bundle_js_path'] ),
@@ -19,7 +19,7 @@ if (is_admin()) {
             );
     
             wp_enqueue_style(
-                namespace\PROJECT_CONFIG['admin_name']."-block-editor-css",
+                namespace\PROJECT_CONFIG['admin_name']."-block-editor",
                 plugins_url( namespace\PROJECT_CONFIG['admin_bundle_css_path'], dirname( __FILE__ ) ),
                 namespace\PROJECT_CONFIG['admin_bundle_css_deps'],
                 filemtime( dirname(__DIR__) . namespace\PROJECT_CONFIG['admin_bundle_css_path'] ),
@@ -28,8 +28,8 @@ if (is_admin()) {
     
             register_block_type(
                 namespace\PROJECT_CONFIG['name']."/admin-block", array(
-                    'editor_script' => namespace\PROJECT_CONFIG['admin_name']."-block-js",
-                    'editor_style'  => namespace\PROJECT_CONFIG['admin_name']."-block-editor-css",
+                    'editor_script' => namespace\PROJECT_CONFIG['admin_name']."-block",
+                    'editor_style'  => namespace\PROJECT_CONFIG['admin_name']."-block-editor",
                 )
             );
         });
@@ -38,7 +38,7 @@ if (is_admin()) {
 
     add_action( 'init', function() {
         wp_enqueue_script(
-            namespace\PROJECT_CONFIG['client_name']."-js",
+            namespace\PROJECT_CONFIG['client_name'],
             plugins_url( namespace\PROJECT_CONFIG['client_bundle_js_path'], dirname( __FILE__ ) ),
             namespace\PROJECT_CONFIG['client_bundle_js_deps'],
             filemtime( dirname(__DIR__) . namespace\PROJECT_CONFIG['client_bundle_js_path'] ),
@@ -46,7 +46,7 @@ if (is_admin()) {
         );
     
         wp_enqueue_style(
-            namespace\PROJECT_CONFIG['client_name']."-style-css",
+            namespace\PROJECT_CONFIG['client_name']."-style",
             plugins_url( namespace\PROJECT_CONFIG['client_bundle_css_path'], dirname( __FILE__ ) ),
             namespace\PROJECT_CONFIG['client_bundle_css_deps'],
             filemtime( dirname(__DIR__) . namespace\PROJECT_CONFIG['client_bundle_css_path'] ),
@@ -65,8 +65,8 @@ if (is_admin()) {
     
         register_block_type(
             namespace\PROJECT_CONFIG['name']."/client-block", array(
-                'script' 		=> namespace\PROJECT_CONFIG['client_name']."-js",
-                'style'         => namespace\PROJECT_CONFIG['client_name']."-style-css",
+                'script' 		=> namespace\PROJECT_CONFIG['client_name'],
+                'style'         => namespace\PROJECT_CONFIG['client_name']."-style",
             )
         );
     });
