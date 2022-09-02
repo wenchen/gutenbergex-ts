@@ -1,4 +1,4 @@
-# WordPress Gutenberg Block Example using Typescript
+# WordPress Gutenberg Block Example in Typescript
 
 ## Installation
 

@@ -54,6 +54,16 @@ if (is_admin()) {
             filemtime( dirname(__DIR__) . $project_config['client_bundle_css_path'] ),
             $project_config['client_css_media']
         );
+
+        add_action( 'wp', function() {
+            include(dirname(__DIR__).'/variable.php');
+
+            wp_add_inline_script(
+                "{$project_config['client_name']}",
+                "const {$project_config['js_var_name']} = ".json_encode($project_var),
+                'before'
+            );
+        });
     
         register_block_type(
             "{$project_config['name']}/client-block", array(

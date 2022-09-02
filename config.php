@@ -17,6 +17,7 @@ $project_config = array(
     "client_bundle_css_deps" => array( ),
     "client_js_in_footer" => false,
     "client_css_media" => "all",
+    "js_var_name" => "privatefile",
     
     "admin_bundle_js_path" => "/public/admin/main.js",
     "admin_bundle_css_path" => "/public/admin/main.css",

@@ -1,4 +1,5 @@
 import { BlockConfiguration } from '@wordpress/blocks';
+import { __ } from '@wordpress/i18n';
 
 import transforms from "./src/transforms";
 import edit from "./src/edit";
@@ -11,11 +12,11 @@ export interface Attributes {
 export const blockInfo: BlockConfiguration<Attributes> = {
     apiVersion: 2,
     name: 'gutenberg-ts/admin-block',
-    title: 'GutenbergTS Example Block',
-    description: 'GutenbergTS Example Block',
+    title: __('GutenbergTS Example Block'),
+    description: __('GutenbergTS Example Block'),
     icon: 'universal-access-alt',
     category: 'common',
-    keywords: ['document', 'pdf', 'download'],
+    keywords: [__('document'), __('pdf'), __('download')],
     attributes: {
         text: {
             type: "string",
