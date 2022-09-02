@@ -39,7 +39,7 @@ if (is_admin()) {
     add_action( 'init', function() {
         wp_enqueue_script(
             namespace\PROJECT_CONFIG['client_name']."-js",
-            plugins_url( namespace\PROJECT_CONFIG['client_bundle_js_path'], __FILE__ ),
+            plugins_url( namespace\PROJECT_CONFIG['client_bundle_js_path'], dirname( __FILE__ ) ),
             namespace\PROJECT_CONFIG['client_bundle_js_deps'],
             filemtime( dirname(__DIR__) . namespace\PROJECT_CONFIG['client_bundle_js_path'] ),
             namespace\PROJECT_CONFIG['client_js_in_footer']
