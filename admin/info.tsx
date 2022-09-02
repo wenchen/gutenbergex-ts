@@ -6,6 +6,7 @@ import edit from "./src/edit";
 import save from "./src/save";
 
 export interface Attributes {
+    className: 'gutenbergex-ts-textarea'
     text: string;
 }
 
