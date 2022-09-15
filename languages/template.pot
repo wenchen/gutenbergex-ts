@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: gutenbergex-ts 0.1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-09-14T17:32:03.238Z\n"
+"Language: \n"
+"X-Domain: gutenbergexts\n"
+"X-Handler: gutenbergex-ts\n"
+"X-Generator: gettext-extract\n"
+
+#: admin/info.tsx:20
+msgid "document"
+msgstr ""
+
+#: admin/info.tsx:20
+msgid "download"
+msgstr ""
+
+#: admin/info.tsx:16
+#: admin/info.tsx:17
+msgid "GutenbergTS Example Block"
+msgstr ""
+
+#: admin/info.tsx:20
+msgid "pdf"
+msgstr ""

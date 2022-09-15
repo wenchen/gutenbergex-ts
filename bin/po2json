@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var po2json = require('po2json');
+
+const langFolder = './languages/';
+
+fs.readdirSync(langFolder).forEach(poFile => {
+    if (!poFile.endsWith(".po")) { return; }
+
+    const poFilepath = `${langFolder}/${poFile}`;
+    jsonRawData = po2json.parseFileSync(poFilepath, { format: 'raw' });
+    jsonData = po2json.parseFileSync(poFilepath, { format: 'jed', domain: jsonRawData['']["x-domain"] });
+
+    var jsonStr = JSON.stringify(jsonData);
+
+    // ${domain}-${locale}-${handler}.json
+    const jsonFilepath = `${langFolder}${jsonRawData['']["x-domain"]}-${jsonRawData['']["language"]}-${jsonRawData['']["x-handler"]}.json`;
+    var stream = fs.createWriteStream(jsonFilepath, {});
+    stream.write(jsonStr);
+});

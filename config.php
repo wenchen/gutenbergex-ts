@@ -3,9 +3,7 @@ namespace GutenbergExTS {
     const PROJECT_NAME = "gutenbergex-ts";
     const PROJECT_CONFIG = array(
         "name" => PROJECT_NAME,
-
-        "client_name" => PROJECT_NAME."-client",
-        "admin_name" => PROJECT_NAME."-admin",
+        "i18n_domain" => "gutenbergexts",
         
         "client_bundle_js_path" => "/public/client/main.js",
         "client_bundle_css_path" => "/public/client/main.css",

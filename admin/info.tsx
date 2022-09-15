@@ -10,6 +10,10 @@ export interface Attributes {
     text: string;
 }
 
+export const info = {
+    i18nDomain: 'gutenbergexts',
+}
+
 export const blockInfo: BlockConfiguration<Attributes> = {
     apiVersion: 2,
     name: 'gutenberg-ts/admin-block',
@@ -17,7 +21,7 @@ export const blockInfo: BlockConfiguration<Attributes> = {
     description: __('GutenbergTS Example Block'),
     icon: 'universal-access-alt',
     category: 'common',
-    keywords: [__('document'), __('pdf'), __('download')],
+    keywords: [__('document', info.i18nDomain), __('pdf', info.i18nDomain), __('download', info.i18nDomain)],
     attributes: {
         text: {
             type: "string",

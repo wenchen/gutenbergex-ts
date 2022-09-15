@@ -15,7 +15,9 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "plugin-zip": "wp-scripts plugin-zip",
-    "dev": "webpack --watch --config webpack.config.js --mode development"
+    "dev": "webpack --watch --config webpack.config.js --mode development",
+    "i18n": "gettext-extract -c gettext.js",
+    "i18n:json": "./bin/po2json"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +50,9 @@
     "@wordpress/components": "^19.17.0",
     "@wordpress/i18n": "^4.16.0",
     "@wordpress/scripts": "^23.7.2",
+    "gettext-extract": "^2.0.1",
     "mini-css-extract-plugin": "^2.6.1",
+    "po2json": "1.0.0-beta-3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.54.5",
@@ -60,8 +64,10 @@
   },
   "files": [
     "config.php",
+    "variable.php",
     "plugin.php",
     "public",
-    "src"
+    "src",
+    "languages"
   ]
 }

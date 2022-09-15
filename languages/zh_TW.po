@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gutenbergex-ts 0.1.0\n"
+"POT-Creation-Date: 2022-09-14T17:32:03.238Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: gutenbergexts\n"
+"X-Handler: gutenbergex-ts\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: admin/info.tsx:20
+msgid "document"
+msgstr "文件"
+
+#: admin/info.tsx:20
+msgid "download"
+msgstr "下載"
+
+#: admin/info.tsx:16 admin/info.tsx:17
+msgid "GutenbergTS Example Block"
+msgstr "GutenbergTS 範本區塊"
+
+#: admin/info.tsx:20
+msgid "pdf"
+msgstr "pdf"
